@@ -3,9 +3,9 @@ This comprehensive suite of Python scripts is designed for managing skiptrace da
 
 skiptrace.py: Pre-processes skiptrace data by filtering and removing duplicates.
 
-before_t1.py: Integrates processed skiptrace data with the main T1Skiptrace file.
+before_ba.py: Integrates processed skiptrace data with the main T1Skiptrace file.
 
-after_t1.py: Identifies litigators and generates various reports.
+after_ba.py: Identifies litigators and generates various reports.
 
 ## Detailed Workflow
 ## 1. skiptrace.py: Pre-processing Skiptrace Data
@@ -25,7 +25,7 @@ Saves the filtered data to the output directory with the suffix - BST.
 
 Outcome: Produces cleaned and filtered Excel files ready for integration. The rows are sorted in descending order based on Score.
 
-## 2. before_t1.py: Integrating Skiptrace Data
+## 2. before_ba.py: Integrating Skiptrace Data
 Objective: Integrates the filtered skiptrace data with a main T1Skiptrace BST_out file and prepares it for further processing.
 
 Key Actions:
@@ -44,7 +44,7 @@ Saves the modified data and generates the "Litigator scrubbing" file.
 
 Outcome: Produces an integrated and cleaned dataset, ready for litigator identification and report generation.
 
-## 3. after_t1.py: Identifying Litigators and Creating Reports
+## 3. after_ba.py: Identifying Litigators and Creating Reports
 Objective: Identifies litigators and creates various reports based on the integrated data.
 
 Key Actions:
@@ -69,9 +69,9 @@ No file contained in any of the folders can be open at the time of running the c
 ## Execution Guide
 Run skiptrace.py: Start with the data pre-processing script to prepare your data files. Ensure all unwanted data is filtered out and the data is consistent.
 
-Proceed with before_t1.py: After cleaning, integrate the filtered skiptrace data with the main T1Skiptrace dataset.
+Proceed with before_ba.py: After cleaning, integrate the filtered skiptrace data with the main T1Skiptrace dataset.
 
-Finalize with after_t1.py: Identify litigators and generate the necessary reports and datasets.
+Finalize with after_ba.py: Identify litigators and generate the necessary reports and datasets.
 
 ## Important Notes
 Each script is designed to operate sequentially but can be adjusted for standalone use if required.
